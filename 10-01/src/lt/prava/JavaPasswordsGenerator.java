@@ -10,7 +10,7 @@ public class JavaPasswordsGenerator {
 		sortList(passwordList);
 //		printFromArray(0, 3, passwordList); // print passwordList elements ([from], [to], passwordList)
 		System.out.println("Password dublicates found: " + checkIfItemsMatches(passwordList));
-		
+
 	}
 
 	private static int checkIfItemsMatches(String[] passwordList) {
@@ -29,7 +29,7 @@ public class JavaPasswordsGenerator {
 		System.out.println("Checking for dublicate passwords took " + (generateEnd - generateStart) + " ms");
 		return passwordMatches;
 	}
-	
+
 	private static void printFromArray(int start, int end, String[] passwordsArray) {
 		for (int i = start; i < end + 1; i++) {
 			System.out.println(passwordsArray[i]);
@@ -58,18 +58,12 @@ public class JavaPasswordsGenerator {
 	private static String generateRandomPassword(int lenght) {
 		StringBuilder builder = new StringBuilder();
 		Random ranodm = new Random();
-		char[] charArray = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&*-_+/.,;\"][{}|\\".toCharArray();
+		char[] charArray = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&*-_+/.,;\"][{}|\\"
+				.toCharArray();
 		for (int i = 0; i < lenght; i++) {
-			builder.append(charArray[ranodm.nextInt(charArray.length-1)]);
+			builder.append(charArray[ranodm.nextInt(charArray.length - 1)]);
 		}
 		return builder.toString();
 	}
-	
-	
-	
-	
-	
-	
-	
 
 }
