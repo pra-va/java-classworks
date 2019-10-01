@@ -1,0 +1,47 @@
+package prava;
+
+public class ForStatement {
+
+	public static void main(String[] args) {
+		checkFor();
+		
+		
+	}
+
+	private static void checkFor() {
+		for(int i=0; i<=10; i++) {
+			System.out.print(i + " ");
+		}
+		
+		System.out.println();
+		for (int i=0; i<=10; ) {
+			System.out.print(i + " ");
+			i++;
+		}
+		
+		int i = 0;
+		System.out.println();
+		for (; i<=10;) {
+			System.out.print(i + " ");
+			i++;
+		}
+		
+		System.out.println();
+		int j = 0;
+		for (; ;) {
+			if (j<=10) {
+			System.out.print(j + " ");
+			j++;
+			} else {
+				break;
+			}
+			
+		}
+		
+		for (int x=0, z=10; x<z; x++, z--) {
+			System.out.println("x: " + x + ", z: " + z);
+		}
+		
+	}
+
+}

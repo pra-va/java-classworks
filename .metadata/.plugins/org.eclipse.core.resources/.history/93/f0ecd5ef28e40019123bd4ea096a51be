@@ -1,0 +1,41 @@
+package lt.prava;
+
+import java.util.Arrays;
+
+public class JavaWorkingWithArarys {
+
+	public static void main(String[] args) {
+		int[] numbers = { 1, 2, 3, 4, 5 };
+		printArray(numbers);
+		int index = 2;
+		int value = 45;
+		insertElementByIndex(numbers, index, value);
+		System.out.println(Arrays.toString(insertElementByIndex(numbers, index, value)));
+
+	}
+
+	private static int[] insertElementByIndex(int[] numbers, int index, int value) {
+		long start = System.currentTimeMillis();
+		int[] newNumbers = new int[numbers.length + 1];
+		if (index < numbers.length) {
+			for (int i = 0; i < index; i++) {
+				newNumbers[i] = numbers[i];
+			}
+			newNumbers[index] = value;
+			for (int i = index + 1; i < newNumbers.length; i++) {
+				newNumbers[i] = numbers[i - 1];
+			}
+		}
+		long end = System.currentTimeMillis();
+		System.out.println((end - start)/1000 );
+		return newNumbers;
+	}
+
+	private static void printArray(int[] numbers) {
+		for (int number : numbers) {
+			System.out.print(number + " ");
+		}
+
+	}
+
+}

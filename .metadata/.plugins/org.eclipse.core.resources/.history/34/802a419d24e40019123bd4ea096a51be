@@ -1,0 +1,28 @@
+package lt.prava;
+
+import java.util.Arrays;
+import java.util.Random;
+
+public class JavaPasswordsGenerator {
+
+	public static void main(String[] args) {
+		System.out.println(Arrays.toString(generateRandomChar(20)));
+
+	}
+
+	private static char[] generateRandomChar(int lenght) {
+		Random random = new Random();
+		char[] charPasswd = new char[lenght];
+		for (int i = 0 ; i < lenght; i++) {
+			int randInt = 33 + random.nextInt(92);
+			charPasswd[i] = (char) randInt;
+		}
+		return charPasswd;
+	}
+	
+	
+	
+	
+	
+
+}
