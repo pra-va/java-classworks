@@ -165,6 +165,7 @@ public class Sort {
 			}
 		}
 	}
+	
 	/**
 	 * Insertion sort algorithm.
 	 * @param longArray
