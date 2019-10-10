@@ -8,13 +8,13 @@ public class SortingAlgorithmDoubles {
 
 	public static void main(String[] args) {
 		generateDoubles(numbers);
-		System.out.println(Arrays.toString(numbers));
-//		bubbleSort(numbers);
+//		System.out.println(Arrays.toString(numbers));
+		bubbleSort(numbers);
 //		insertionSort(numbers);
 //		selectionSort(numbers);
 //		mergeSort(numbers);
-		quickSort(numbers, 0, numbers.length - 1);
-		System.out.println(Arrays.toString(numbers));
+//		quickSort(numbers, 0, numbers.length - 1);
+//		System.out.println(Arrays.toString(numbers));
 	}
 	
 	
@@ -140,9 +140,10 @@ public class SortingAlgorithmDoubles {
 
 	private static void bubbleSort(double[] numbers) {
 		int numberOfSwaps = 1;
+		int numberOfIterations = 0;
 		while (numberOfSwaps > 0) {
 			numberOfSwaps = 0;
-			for (int i = 0, j = 1; j < numbers.length; i++, j++) {
+			for (int i = 0, j = 1; j < numbers.length - numberOfIterations; i++, j++) {
 				if (numbers[i] > numbers[j]) {
 					double tmp = numbers[i];
 					numbers[i] = numbers[j];
@@ -150,6 +151,7 @@ public class SortingAlgorithmDoubles {
 					numberOfSwaps++;
 				}
 			}
+			numberOfIterations++;
 		}
 	}
 
