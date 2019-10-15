@@ -15,7 +15,5 @@ public class StudentsAndHouses {
 		House kamciatka = new House(1, 5, "Sauletekio g. 18");
 		kamciatka.accomodateStudent(students);
 		kamciatka.printRoomList();
-
 	}
-
 }
