@@ -1,8 +1,13 @@
 package lt.prava;
 
+import java.text.SimpleDateFormat;
+import java.util.Arrays;
+import java.util.Date;
+import java.util.Scanner;
+
 public class Practice {
 
-	public static void main(String[] args) {
+	public static void main(String[] a) {
 //		printText(); // 1.
 
 //		char[] text = { 'H', 'e', 'l', 'l', 'o', ' ', 'w', 'o', 'r', 'l', 'd' };
@@ -24,13 +29,160 @@ public class Practice {
 
 //		printPrimitiveMinMaxValues(); // 8.
 
-//		String text = "String changer.";
-//		stringToBinaryForm(text); // 9.
+		String text = "String changer.";
+		stringToBinaryForm(text); // 9.
 
-		String code = "84, 104, 101, 32, 98, 101, 115, 116, 32, 112, 97, 115, 115, 119, "
-				+ "111, 114, 100, 32, 109, 97, 110, 97, 103, 101, 114, 115, 32, 102, 111, 114, 32, 50, 48, 49, 57";
-		decodeText(code);
+//		String code = "84, 104, 101, 32, 98, 101, 115, 116, 32, 112, 97, 115, 115, 119, "
+//				+ "111, 114, 100, 32, 109, 97, 110, 97, 103, 101, 114, 115, 32, 102, 111, 114, 32, 50, 48, 49, 57";
+//		decodeText(code); // 10.
 
+//		squareVolumeAndPerimeter(); // 11.
+
+//		findFocus(); // 12.
+
+//		getNameGender("pranas"); // 13.
+
+//		getWeekDay("2019-10-17"); // 14.
+
+//		printAllFibonacciLessThan(1000); // 15.
+
+//		addNumbersUp(); // 16.
+
+//		squaresNumber(); // 17.
+
+//		isWordPalyndromic("annas"); // 18.
+
+//		printMultiplicationTable(100); // 19.
+
+//		factorial(); // 20.
+
+	}
+
+	private static void factorial() {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Enter number: ");
+		int number = scanner.nextInt();
+		for (int i = number - 1; i > 0; i--) {
+			number *= i;
+		}
+		System.out.println(number);
+	}
+
+	private static void printMultiplicationTable(int maxNumber) {
+		for (int i = 1; i <= maxNumber; i++) {
+			for (int j = 1; j <= maxNumber; j++) {
+				System.out.printf("%6s", i * j);
+			}
+			System.out.print("\n");
+		}
+	}
+
+	private static void isWordPalyndromic(String wordToCheck) {
+		for (int i = 0, j = wordToCheck.length() - 1; i < wordToCheck.length() / 2; i++, j--) {
+			if (wordToCheck.charAt(i) == wordToCheck.charAt(j)) {
+				continue;
+			} else {
+				System.out.println("Word " + wordToCheck + " is not palindromic.");
+				return;
+			}
+		}
+		System.out.println("Word " + wordToCheck + " is palindromic.");
+
+	}
+
+	private static void squaresNumber() {
+		Scanner scanner = new Scanner(System.in);
+
+		System.out.println("What number to square?");
+		int number = scanner.nextInt();
+
+		int answer = 0;
+
+		for (int i = 0; i < number; i++) {
+			for (int j = 0; j < number; j++) {
+				answer++;
+			}
+		}
+
+		System.out.println(answer);
+	}
+
+	private static void addNumbersUp() {
+		Scanner scanner = new Scanner(System.in);
+
+		System.out.println("Enter first number: ");
+		int first = scanner.nextInt();
+
+		System.out.println("Enter second number: ");
+		int second = scanner.nextInt();
+
+		for (int i = 0; i < second; i++) {
+			first++;
+		}
+
+		System.out.println(first);
+	}
+
+	private static void printAllFibonacciLessThan(int maxNumber) {
+		for (int i = 1; i < maxNumber; i++) {
+			boolean dividesFromSelf = false;
+			for (int j = 2; j < i; j++) {
+				if (i % j == 0) {
+					dividesFromSelf = true;
+					break;
+				}
+			}
+			if (!dividesFromSelf) {
+				System.out.println(i);
+			}
+		}
+	}
+
+	// Parameter format: yyyy-mm-dd
+	private static void getWeekDay(String date) {
+		String[] stringDateArray = date.split("-");
+		int[] dateArrayFormatted = new int[3];
+
+		dateArrayFormatted[0] = Integer.parseInt(stringDateArray[0]) - 1900;
+		dateArrayFormatted[1] = Integer.parseInt(stringDateArray[1]) - 1;
+		dateArrayFormatted[2] = Integer.parseInt(stringDateArray[2]);
+
+		System.out.println(new SimpleDateFormat("EEEE")
+				.format(new Date(dateArrayFormatted[0], dateArrayFormatted[1], dateArrayFormatted[2])));
+	}
+
+	private static void getNameGender(String name) {
+		StringBuilder builder = new StringBuilder();
+		for (int i = name.length() - 1; i >= name.length() - 2; i--) {
+			builder.append(name.charAt(i));
+		}
+		if (builder.toString().equals("sa") || builder.toString().equals("su")) {
+			System.out.println(name + " is a man.");
+		} else {
+			System.out.println(name + " is a woman.");
+		}
+
+	}
+
+	private static void findFocus() {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Enter a: ");
+		double a = scanner.nextDouble();
+		System.out.println("Enter b: ");
+		double b = scanner.nextDouble();
+		System.out.println("Enter c: ");
+		double c = scanner.nextDouble();
+
+		System.out.println("Focus x = " + (-b / (2 * a)));
+		System.out.println("Focus y = " + (c - (b * 2 - 1) / (4 * a)));
+	}
+
+	private static void squareVolumeAndPerimeter() {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Enter cube side length:");
+		double side = scanner.nextDouble();
+		System.out.println("Volume: " + (side * side));
+		System.out.println("Perimeter: " + (side * 4));
 	}
 
 	private static void decodeText(String code) {
@@ -44,17 +196,18 @@ public class Practice {
 
 	private static void stringToBinaryForm(String text) {
 		byte[] bytes = text.getBytes();
+		System.out.println(Arrays.toString(bytes));
 		StringBuilder binary = new StringBuilder();
 		for (byte b : bytes) {
 			int val = b;
 			for (int i = 0; i < 8; i++) {
+				System.out.println(val);
 				binary.append((val & 128) == 0 ? 0 : 1);
 				val <<= 1;
 			}
 			binary.append(' ');
 		}
 		System.out.println("'" + text + "' to binary: " + binary);
-
 	}
 
 	private static void printPrimitiveMinMaxValues() {
