@@ -5,7 +5,6 @@ public abstract class People {
 	private double money;
 
 	public People(String name, double money) {
-		super();
 		this.name = name;
 		this.money = money;
 	}
