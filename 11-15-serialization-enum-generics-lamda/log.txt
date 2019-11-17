@@ -1,0 +1,5 @@
+Info messge
+Error messge
+java.lang.Exception: Error message
+	at Loging.JavaLogging.loggerOne(JavaLogging.java:20)
+	at Loging.JavaLogging.main(JavaLogging.java:10)

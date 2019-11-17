@@ -14,7 +14,7 @@ import lt.itakademija.exam.test.BaseTest;
 public class MySolutions extends BaseTest {
 
 	@Override
-	protected Exercises createExercises() {
+	public Exercises createExercises() {
 		return new Exercises() {
 
 			@Override
