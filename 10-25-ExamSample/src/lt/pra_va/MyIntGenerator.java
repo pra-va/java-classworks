@@ -9,6 +9,7 @@ public class MyIntGenerator implements IntegerGenerator {
 	public MyIntGenerator(int from, int to) {
 		this.from = from;
 		this.to = to;
+
 	}
 
 	@Override

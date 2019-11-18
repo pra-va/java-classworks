@@ -42,7 +42,7 @@ public class Gearbox {
 		return revs * gears.get(currentGear).gearRatio;
 	}
 
-	private class Gear {
+	public class Gear {
 		private int gearNumber;
 		private double gearRatio;
 

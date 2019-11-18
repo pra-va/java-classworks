@@ -1,7 +1,7 @@
-package JUnit;
+package lt.pra_va;
 
 
-import lt.pra_va.SheepExtended;
+
 import lt.vtvpmc.sheep.SheepColor;
 import org.junit.jupiter.api.Test;
 

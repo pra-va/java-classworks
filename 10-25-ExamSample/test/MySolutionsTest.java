@@ -1,4 +1,4 @@
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.Assert.assertEquals;
 
 import org.apache.log4j.Logger;
 import org.junit.jupiter.api.Test;
@@ -13,7 +13,7 @@ public class MySolutionsTest {
 	public void shouldReturnTrueIfSameObjectIsPassed() {
 		MySolutions solution = new MySolutions();
 		Exercises exercises = solution.createExercises();
-		logger.error("Debugging");
+		logger.error("Junit test is running.");
 		assertEquals(false, exercises.isSameObject(solution, exercises));
 	}
 }
