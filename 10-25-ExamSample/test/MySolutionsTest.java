@@ -15,5 +15,7 @@ public class MySolutionsTest {
 		Exercises exercises = solution.createExercises();
 		logger.error("Junit test is running.");
 		assertEquals(false, exercises.isSameObject(solution, exercises));
+
+		System.out.println(MySolutions.class);
 	}
 }

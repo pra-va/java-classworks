@@ -1,0 +1,69 @@
+2019-11-19 11:52:22 INFO  PhilatelistImplementation:45 - Philatelist is adding new post stamp to collection. Name: Test; market price: 2.0; nominal price: 1.0
+2019-11-19 11:52:22 INFO  PhilatelistImplementation:45 - Philatelist is adding new post stamp to collection. Name: Test2; market price: 2.0; nominal price: 14.0
+2019-11-19 11:52:22 INFO  PhilatelistImplementation:45 - Philatelist is adding new post stamp to collection. Name: Test3; market price: 9.0; nominal price: 4.0
+2019-11-19 11:52:22 INFO  PhilatelistImplementation:45 - Philatelist is adding new post stamp to collection. Name: Test4; market price: 12.0; nominal price: 4.0
+2019-11-19 11:52:22 INFO  PhilatelistImplementation:45 - Philatelist is adding new post stamp to collection. Name: Test5; market price: 1.0; nominal price: 1.0
+2019-11-19 11:52:22 ERROR PhilatelistImplementation:37 - IllegalArgumentException while trying to add post stamp to a collection: post stamp name or post stamp itself is null or post stamp name is empty.
+2019-11-19 11:52:22 ERROR PhilatelistImplementation:37 - IllegalArgumentException while trying to add post stamp to a collection: post stamp name or post stamp itself is null or post stamp name is empty.
+2019-11-19 11:52:22 INFO  PhilatelistImplementation:45 - Philatelist is adding new post stamp to collection. Name: Test; market price: 1.0; nominal price: 1.0
+2019-11-19 11:52:22 INFO  PhilatelistImplementation:45 - Philatelist is adding new post stamp to collection. Name: Test2; market price: 2.0; nominal price: 2.0
+2019-11-19 11:52:22 INFO  PhilatelistImplementation:45 - Philatelist is adding new post stamp to collection. Name: Test3; market price: 3.0; nominal price: 2.0
+2019-11-19 11:52:22 INFO  PhilatelistImplementation:45 - Philatelist is adding new post stamp to collection. Name: Test4; market price: 4.0; nominal price: 2.0
+2019-11-19 11:52:22 INFO  PhilatelistImplementation:45 - Philatelist is adding new post stamp to collection. Name: Test4; market price: 5.0; nominal price: 2.0
+2019-11-19 11:52:22 ERROR PhilatelistImplementation:37 - IllegalArgumentException while trying to add post stamp to a collection: post stamp name or post stamp itself is null or post stamp name is empty.
+2019-11-19 11:52:22 INFO  PhilatelistImplementation:45 - Philatelist is adding new post stamp to collection. Name: Test; market price: 1.3; nominal price: 1.3
+2019-11-19 11:52:22 INFO  PhilatelistImplementation:45 - Philatelist is adding new post stamp to collection. Name: Test2; market price: 1.5; nominal price: 1.5
+2019-11-19 11:52:25 INFO  ProjectManagerImplementation:126 - New project is created with: id: PROJ-1; summary: Test project.
+2019-11-19 11:52:25 INFO  ProjectManagerImplementation:94 - New issue created for project with id PROJ-1.
+2019-11-19 11:52:25 INFO  ProjectManagerImplementation:126 - New project is created with: id: PROJ-1; summary: Test project.
+2019-11-19 11:52:25 INFO  ProjectManagerImplementation:59 - New issue created for project with id PROJ-1.
+2019-11-19 11:52:25 INFO  ProjectManagerImplementation:59 - New issue created for project with id PROJ-1.
+2019-11-19 11:52:25 INFO  ProjectManagerImplementation:59 - New issue created for project with id PROJ-1.
+2019-11-19 11:52:25 INFO  ProjectManagerImplementation:59 - New issue created for project with id PROJ-1.
+2019-11-19 11:52:25 INFO  ProjectManagerImplementation:59 - New issue created for project with id PROJ-1.
+2019-11-19 11:52:25 INFO  ProjectManagerImplementation:59 - New issue created for project with id PROJ-1.
+2019-11-19 11:52:25 INFO  ProjectManagerImplementation:59 - New issue created for project with id PROJ-1.
+2019-11-19 11:52:25 INFO  ProjectManagerImplementation:59 - New issue created for project with id PROJ-1.
+2019-11-19 11:52:25 INFO  ProjectManagerImplementation:59 - New issue created for project with id PROJ-1.
+2019-11-19 11:52:25 ERROR ProjectManagerImplementation:119 - IllegalArgumentException in createProject(String id, String summary) : either id, summary or both of them are empty strings.
+2019-11-19 11:52:25 ERROR ProjectManagerImplementation:119 - IllegalArgumentException in createProject(String id, String summary) : either id, summary or both of them are empty strings.
+2019-11-19 11:52:25 ERROR ProjectManagerImplementation:115 - NullPointerException in createProject(String id, String summary) : either id, summary or both of them are null.
+2019-11-19 11:52:25 ERROR ProjectManagerImplementation:115 - NullPointerException in createProject(String id, String summary) : either id, summary or both of them are null.
+2019-11-19 11:52:25 ERROR ProjectManagerImplementation:45 - NullPointerException in createIssue(Project project, String summary) : either project, summary or both of them are null.
+2019-11-19 11:52:25 ERROR ProjectManagerImplementation:81 - NullPointerException in createIssue(String projectId, String summary): either project, summary or both of them are null.
+2019-11-19 11:52:25 ERROR ProjectManagerImplementation:45 - NullPointerException in createIssue(Project project, String summary) : either project, summary or both of them are null.
+2019-11-19 11:52:25 ERROR ProjectManagerImplementation:81 - NullPointerException in createIssue(String projectId, String summary): either project, summary or both of them are null.
+2019-11-19 11:52:25 INFO  ProjectManagerImplementation:126 - New project is created with: id: PROJ-1; summary: Test project.
+2019-11-19 11:52:25 INFO  ProjectManagerImplementation:59 - New issue created for project with id PROJ-1.
+2019-11-19 11:52:25 INFO  ProjectManagerImplementation:126 - New project is created with: id: PROJ-0; summary: Test project: 0.
+2019-11-19 11:52:25 INFO  ProjectManagerImplementation:126 - New project is created with: id: PROJ-1; summary: Test project: 1.
+2019-11-19 11:52:25 INFO  ProjectManagerImplementation:126 - New project is created with: id: PROJ-2; summary: Test project: 2.
+2019-11-19 11:52:25 INFO  ProjectManagerImplementation:126 - New project is created with: id: PROJ-3; summary: Test project: 3.
+2019-11-19 11:52:25 INFO  ProjectManagerImplementation:126 - New project is created with: id: PROJ-4; summary: Test project: 4.
+2019-11-19 11:52:25 INFO  ProjectManagerImplementation:126 - New project is created with: id: PROJ-5; summary: Test project: 5.
+2019-11-19 11:52:25 INFO  ProjectManagerImplementation:126 - New project is created with: id: PROJ-6; summary: Test project: 6.
+2019-11-19 11:52:25 INFO  ProjectManagerImplementation:126 - New project is created with: id: PROJ-7; summary: Test project: 7.
+2019-11-19 11:52:25 INFO  ProjectManagerImplementation:126 - New project is created with: id: PROJ-8; summary: Test project: 8.
+2019-11-19 11:52:25 INFO  ProjectManagerImplementation:126 - New project is created with: id: PROJ-9; summary: Test project: 9.
+2019-11-19 11:52:25 INFO  ProjectManagerImplementation:126 - New project is created with: id: PROJ-10; summary: Test project: 10.
+2019-11-19 11:52:25 INFO  ProjectManagerImplementation:126 - New project is created with: id: PROJ-11; summary: Test project: 11.
+2019-11-19 11:52:25 INFO  ProjectManagerImplementation:126 - New project is created with: id: PROJ-12; summary: Test project: 12.
+2019-11-19 11:52:25 INFO  ProjectManagerImplementation:126 - New project is created with: id: PROJ-13; summary: Test project: 13.
+2019-11-19 11:52:25 INFO  ProjectManagerImplementation:126 - New project is created with: id: PROJ-14; summary: Test project: 14.
+2019-11-19 11:52:25 INFO  ProjectManagerImplementation:126 - New project is created with: id: PROJ-15; summary: Test project: 15.
+2019-11-19 11:52:25 INFO  ProjectManagerImplementation:126 - New project is created with: id: PROJ-1; summary: Test project.
+2019-11-19 11:52:25 ERROR ProjectManagerImplementation:85 - IllegalArgumentException in createIssue(String projectId, String summary): either project id, summary or both field are empty String.
+2019-11-19 11:52:25 ERROR ProjectManagerImplementation:49 - IllegalArgumentException in createIssue(Project project, String summary): summary field is empty String.
+2019-11-19 11:52:25 ERROR ProjectManagerImplementation:85 - IllegalArgumentException in createIssue(String projectId, String summary): either project id, summary or both field are empty String.
+2019-11-19 11:52:25 INFO  ProjectManagerImplementation:126 - New project is created with: id: PROJ-1; summary: Test project.
+2019-11-19 11:52:25 INFO  ProjectManagerImplementation:59 - New issue created for project with id PROJ-1.
+2019-11-19 11:52:25 INFO  ProjectManagerImplementation:59 - New issue created for project with id PROJ-1.
+2019-11-19 11:52:25 INFO  ProjectManagerImplementation:59 - New issue created for project with id PROJ-1.
+2019-11-19 11:52:25 INFO  ProjectManagerImplementation:59 - New issue created for project with id PROJ-1.
+2019-11-19 11:52:25 INFO  ProjectManagerImplementation:59 - New issue created for project with id PROJ-1.
+2019-11-19 11:52:25 INFO  ProjectManagerImplementation:59 - New issue created for project with id PROJ-1.
+2019-11-19 11:52:25 INFO  ProjectManagerImplementation:59 - New issue created for project with id PROJ-1.
+2019-11-19 11:52:25 INFO  ProjectManagerImplementation:59 - New issue created for project with id PROJ-1.
+2019-11-19 11:52:25 INFO  ProjectManagerImplementation:59 - New issue created for project with id PROJ-1.
+2019-11-19 11:52:25 INFO  ProjectManagerImplementation:59 - New issue created for project with id PROJ-1.
+2019-11-19 11:52:25 INFO  ProjectManagerImplementation:126 - New project is created with: id: PROJ-1; summary: Test project.
